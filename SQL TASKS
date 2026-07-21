@@ -1,0 +1,8 @@
+create database CollegeDB;
+use CollegeDB;
+create table Student(Student_ID int primary key,name varchar(50) not null,department varchar(30), Age int,email varchar(100) unique);
+insert into Student values(1,'Vinay','CSE',18,'vinay@gmail.com'),(2,'Vijaya','ECE',28,'vijaya@gmail.com'),(3,'VinayaShree','EEE',13,'vinayashree@gmail.com'),(4,'Vijay','CSE',17,'vijay@gmail.com'),(5,'Vinayka','CSE',19,'vinayka@gmail.com');
+select * from Student;
+select name,department from Student;
+select name from Student where department='CSE';
+select name from student order by name asc;
